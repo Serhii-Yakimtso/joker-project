@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+body {
+}
+
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 1280px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav {
+}
+.nav-list {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+.nav-item {
+}
+.nav-item-link {
+}
+.hero {
+}
+.slider {
+}
+.slider-item {
+}
+.main-title {
+}
+.hero-text {
+}
+.about {
+}
+.section-title {
+}
+.about-img {
+}
+.about-text {
+}
+.about-link {
+}
+.our-services {
+}
+.services-list {
+}
+.services-item {
+}
+.services-item-title {
+}
+.services-item-text {
+}
+.our-expertise {
+}
+.expertise-text {
+}
+.expertise-accent {
+}
+.expertise-list {
+}
+.expertise-item {
+}
+.expertise-item-icon {
+}
+.expertise-item-text {
+}
+.prices {
+}
+.prices-text {
+}
+.prices-img {
+}
+.footer {
+}
+.sction-title {
+}
+.footer-adress {
+}
+.footer-map {
+}
+.footer-text {
+}
+.address-link {
+}
