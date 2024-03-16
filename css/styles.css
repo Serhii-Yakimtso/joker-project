@@ -53,8 +53,10 @@ a {
   gap: 40px;
 }
 .nav-item {
+  font-size: 12px;
 }
 .nav-item-link {
+  display: inline-block;
 }
 .hero {
 }
