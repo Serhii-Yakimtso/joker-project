@@ -115,12 +115,17 @@ img {
   text-transform: uppercase;
   color: #9f693d;
 }
+.main-title-accent {
+  color: #0e1b33;
+}
+
 .hero-text {
   font-size: 28px;
   line-height: 1.3;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
+  color: #0e1b33;
 }
 /* ======================================================================== */
 /* ================= ABOUT ================= */
