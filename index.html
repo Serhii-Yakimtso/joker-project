@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -32,7 +38,7 @@
     </header>
     <main>
       <section id="" class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="slider">
             <li class="slider-item">
               <button class="slider-btn" type="button"></button>
@@ -76,7 +82,7 @@
       </section>
       <section id="about" class="about">
         <h2 class="section-title">about us</h2>
-        <div class="container">
+        <div class="container about-container">
           <img
             src="./img/book.jpg"
             alt="open book"
@@ -138,9 +144,9 @@
         <div class="container expertise-container">
           <div class="expertise-wrapper">
             <div class="expertise-text-wrapper">
-              <p class="expertise-text expertise-accent">
+              <p class="expertise-accent">
                 <strong
-                  >we services <br />
+                  >the services <br />
                   we provide</strong
                 >
               </p>
@@ -153,26 +159,26 @@
             </div>
             <ul class="expertise-list">
               <li class="expertise-item">
-                <svg class="expertise-item-icon">
-                  <use href=""></use>
+                <svg class="expertise-item-icon" width="48" height="48">
+                  <use href="./img/sprite.svg#icon-handcuffs"></use>
                 </svg>
                 <p class="expertise-item-text">separation or divorce</p>
               </li>
               <li class="expertise-item">
-                <svg class="expertise-item-icon">
-                  <use href=""></use>
+                <svg class="expertise-item-icon" width="48" height="48">
+                  <use href="./img/sprite.svg#icon-greek-temple"></use>
                 </svg>
                 <p class="expertise-item-text">litigation</p>
               </li>
               <li class="expertise-item">
-                <svg class="expertise-item-icon">
-                  <use href=""></use>
+                <svg class="expertise-item-icon" width="48" height="48">
+                  <use href="./img/sprite.svg#icon-hammer-drop"></use>
                 </svg>
                 <p class="expertise-item-text">child custody</p>
               </li>
               <li class="expertise-item">
-                <svg class="expertise-item-icon">
-                  <use href=""></use>
+                <svg class="expertise-item-icon" width="48" height="48">
+                  <use href="./img/sprite.svg#icon-scales"></use>
                 </svg>
                 <p class="expertise-item-text">spousal supprt</p>
               </li>
@@ -183,8 +189,8 @@
       <section id="prices" class="prices">
         <h2 class="section-title">prices</h2>
         <p class="prices-text">
-          Our hourlyy rates range between $250 and $800 per hour depending on
-          the complexity of your file.
+          Our hourly rates range between $250 and $800 per hour depending on the
+          complexity of your file.
         </p>
         <img
           src="./img/prise.jpg"

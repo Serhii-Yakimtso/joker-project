@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 html {
   scroll-behavior: smooth;
 }
 body {
   background-color: #1f313f;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body,
@@ -45,14 +46,17 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
   width: 1280px;
 }
 
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.header-container {
+  padding-right: 32px;
 }
 .header-nav {
 }
@@ -84,6 +88,10 @@ img {
   background-position: center;
   background-size: 1280px 100%;
   object-fit: cover;
+}
+.hero-container {
+  padding-left: 52px;
+  padding-right: 52px;
 }
 .slider {
   position: absolute;
@@ -123,14 +131,12 @@ img {
 /* ======================================================================== */
 /* ================= ABOUT ================= */
 .about {
-  padding-bottom: 64px;
 }
-.about .container {
-  padding-left: 64px;
-  padding-right: 64px;
+.about-container {
+  padding: 64px;
+  display: flex;
 }
 .section-title {
-  margin-bottom: 64px;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -145,17 +151,10 @@ img {
 .about-img {
   margin-right: 28px;
 }
-.about .container {
-  /* padding-top: 64px;
-  padding-bottom: 64px; */
-  display: flex;
-}
 .about-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  /* margin-bottom: 64px; */
 }
 .about-text {
   margin-bottom: 40px;
@@ -188,8 +187,8 @@ img {
   gap: 132px;
   justify-content: center;
 
-  padding: 72px 92px 136px 156px;
-  list-style-type: style;
+  padding: 136px 92px 136px 156px;
+  list-style: none;
   color: #ffffff;
 }
 .services-item {
@@ -284,6 +283,8 @@ img {
   display: flex;
   gap: 44px;
   height: 468px;
+  padding-left: 54px;
+  padding-right: 54px;
   background-image: url('../img/expertise.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -292,20 +293,41 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-.expertise-text {
+
+  padding-top: 80px;
 }
 .expertise-accent {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #9f693d;
+}
+.expertise-text {
+  font-size: 16px;
+  color: #090909;
 }
 .expertise-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 72px;
+  width: 432px;
+  padding-top: 52px;
+  padding-bottom: 160px;
 }
 .expertise-item {
+  width: calc((100% - 72px) / 2);
 }
 .expertise-item-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 .expertise-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* ================= PRICES ================= */
@@ -325,13 +347,14 @@ img {
   margin: 40px auto;
 }
 .footer {
-  padding-bottom: 64px;
 }
-.footer .sction-title {
-  margin-bottom: 40px;
+.footer .section-title {
 }
 .footer-adress {
+  padding-top: 50px;
+
   font-style: normal;
+  padding-bottom: 20px;
 }
 .footer-map {
   display: block;
