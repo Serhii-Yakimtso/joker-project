@@ -76,7 +76,7 @@ img {
   text-transform: uppercase;
   color: #dfca95;
 }
-.hero {
+.hero-container {
   position: relative;
   padding-top: 240px;
   padding-bottom: 264px;
@@ -87,11 +87,9 @@ img {
   background-size: 1280px 100%;
   object-fit: cover;
 }
-.hero-container {
-  padding-left: 52px;
-  padding-right: 52px;
-}
 .slider {
+  padding-left: 52px;
+
   position: absolute;
   top: 80px;
   display: flex;
@@ -110,6 +108,8 @@ img {
 }
 
 .hero-wrapper {
+  padding-left: 52px;
+
   width: 630px;
 }
 .main-title {
