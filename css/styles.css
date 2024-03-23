@@ -123,7 +123,7 @@ img {
 /* ======================================================================== */
 /* ================= ABOUT ================= */
 .about {
-  padding: 64px;
+  padding-bottom: 64px;
 }
 .about .container {
   padding-left: 64px;
@@ -185,16 +185,75 @@ img {
 }
 .services-list {
   display: flex;
-  gap: 68px;
+  gap: 132px;
   justify-content: center;
 
-  padding: 72px 92px 136px 92px;
+  padding: 72px 92px 136px 156px;
   list-style-type: style;
   color: #ffffff;
 }
 .services-item {
+  position: relative;
   padding-left: 24px;
 }
+
+.services-item:nth-child(1)::before {
+  content: '1';
+  position: absolute;
+  top: 50%;
+  left: -64px;
+  padding-top: 40px;
+  width: 64px;
+  height: 156px;
+  border-radius: 32px;
+
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  color: #1e313f;
+
+  background-color: #bb8a5f;
+  transform: translateY(-50%);
+}
+
+.services-item:nth-child(2)::before {
+  content: '2';
+  position: absolute;
+  top: 50%;
+  left: -64px;
+  padding-top: 40px;
+  width: 64px;
+  height: 156px;
+  border-radius: 32px;
+
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  color: #1e313f;
+
+  background-color: #bb8a5f;
+  transform: translateY(-50%);
+}
+
+.services-item:nth-child(3)::before {
+  content: '3';
+  position: absolute;
+  top: 50%;
+  left: -64px;
+  padding-top: 40px;
+  width: 64px;
+  height: 156px;
+  border-radius: 32px;
+
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  color: #1e313f;
+
+  background-color: #bb8a5f;
+  transform: translateY(-50%);
+}
+
 .services-item-title {
   margin-bottom: 28px;
 
@@ -203,7 +262,7 @@ img {
   color: #ffffff;
 }
 .services-item-text {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.67;
   color: #bbc6c8;
 }
@@ -212,11 +271,35 @@ img {
 
 .our-expertise {
 }
+.our-expertise .section-title {
+  /* margin-bottom: 60px; */
+}
+.expertise-container {
+  padding-top: 60px;
+  padding-left: 148px;
+  padding-right: 148px;
+}
+
+.expertise-wrapper {
+  display: flex;
+  gap: 44px;
+  height: 468px;
+  background-image: url('../img/expertise.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.expertise-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .expertise-text {
 }
 .expertise-accent {
 }
 .expertise-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .expertise-item {
 }
@@ -236,9 +319,6 @@ img {
   font-size: 12px;
   text-align: center;
   color: #bbc6c8;
-}
-
-.prices-text.last {
 }
 
 .prices-img {
