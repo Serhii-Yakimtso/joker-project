@@ -8,9 +8,14 @@
   outline: 1px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
+  background-color: #1f313f;
 }
 
+body,
 p,
 ul,
 ol,
@@ -28,6 +33,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 .section {
@@ -56,20 +65,32 @@ a {
   font-size: 12px;
   line-height: 1;
   text-transform: uppercase;
+  color: #dfca95;
 }
 .nav-item-link {
   display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #dfca95;
 }
 .hero {
   position: relative;
   padding-top: 240px;
   padding-bottom: 264px;
+
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1280px 100%;
+  object-fit: cover;
 }
 .slider {
   position: absolute;
   top: 80px;
   display: flex;
   gap: 16px;
+  line-height: 0;
 }
 .slider-item {
 }
@@ -99,26 +120,96 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+/* ======================================================================== */
+/* ================= ABOUT ================= */
 .about {
+  padding: 64px;
+}
+.about .container {
+  padding-left: 64px;
+  padding-right: 64px;
 }
 .section-title {
+  margin-bottom: 64px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  font-size: 21px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #1e313f;
+  background-color: #ffffff;
 }
 .about-img {
+  margin-right: 28px;
+}
+.about .container {
+  /* padding-top: 64px;
+  padding-bottom: 64px; */
+  display: flex;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* margin-bottom: 64px; */
 }
 .about-text {
+  margin-bottom: 40px;
+  font-size: 13px;
+  color: #bbc6c8;
 }
 .about-link {
+  display: block;
+  padding: 33px;
+  max-width: max-content;
+
+  border-radius: 24px;
+  border: 2px solid;
+  border-top-color: #545454;
+  border-left-color: #545454;
+  border-right-color: #050608;
+  border-bottom-color: #050608;
+
+  font-size: 13px;
+  color: #dfca95;
+  text-transform: uppercase;
 }
+
+/* ================= SERVICES ================= */
+
 .our-services {
 }
 .services-list {
+  display: flex;
+  gap: 68px;
+  justify-content: center;
+
+  padding: 72px 92px 136px 92px;
+  list-style-type: style;
+  color: #ffffff;
 }
 .services-item {
+  padding-left: 24px;
 }
 .services-item-title {
+  margin-bottom: 28px;
+
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .services-item-text {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #bbc6c8;
 }
+
+/* ================= EXPERTISE ================= */
+
 .our-expertise {
 }
 .expertise-text {
@@ -133,21 +224,51 @@ a {
 }
 .expertise-item-text {
 }
+
+/* ================= PRICES ================= */
 .prices {
+  padding-bottom: 32px;
+}
+.prices .section-title {
+  margin-bottom: 32px;
 }
 .prices-text {
+  font-size: 12px;
+  text-align: center;
+  color: #bbc6c8;
 }
+
+.prices-text.last {
+}
+
 .prices-img {
+  margin: 40px auto;
 }
 .footer {
+  padding-bottom: 64px;
 }
-.sction-title {
+.footer .sction-title {
+  margin-bottom: 40px;
 }
 .footer-adress {
+  font-style: normal;
 }
 .footer-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 .footer-text {
+  margin-bottom: 24px;
+  color: #dfca95;
+  text-transform: uppercase;
 }
 .address-link {
+  display: block;
+  color: #dfca95;
+  text-transform: uppercase;
+}
+.address-link.tel {
+  margin-bottom: 24px;
 }
